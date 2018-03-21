@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello TS' Knockout!</title>
+        <link rel="stylesheet" href="./corpo-styles.css"></link>
+    </head>
+    <body class="bootstrap">
+        <div class="content">
+            <div class="container">
+
+                <div class="row mb20">
+                        <div class="col-xs-6">                        
+                           <h1>Hello <strong data-bind="text: teamName"></strong>, <strong data-bind="text: devName"></strong> is here!</h1>                            
+                    
+                            <label>Team name: <input class="input" data-bind="textInput: teamName" /></label>
+                            <label>Dev name: <input class="input" data-bind="textInput: devName" /></label>        
+                    
+                            <div class="mt20">
+                                <mnbutton params="instance: button"></mnbutton>
+                            </div>
+                            
+                            <div class="mt20">
+                                <mnbutton params="instance: button2"></mnbutton>
+                            </div>
+                            
+                            <div class="mt20">
+                                <mnbutton params="instance: button3"></mnbutton>
+                            </div>
+            
+                            <div><mnlink params="instance: link"></mnlink></div>            
+                        </div>
+                        <div class="col-xs-6">                        
+                           <h1>Hello <strong data-bind="text: teamName"></strong>, <strong data-bind="text: devName"></strong> is here!</h1>                            
+                    
+                            <label>Team name: <input class="input" data-bind="textInput: teamName" /></label>
+                            <label>Dev name: <input class="input" data-bind="textInput: devName" /></label>        
+                    
+                            <div class="mt20">
+                                <mnbutton params="instance: buttonTS"></mnbutton>
+                            </div>
+                            
+                            <div class="mt20">
+                                <mnbutton params="instance: buttonTS2"></mnbutton>
+                            </div>
+                            
+                            <div class="mt20">
+                                <mnbutton params="instance: buttonTS3"></mnbutton>
+                            </div>
+            
+                            <div><mnlink params="instance: link"></mnlink></div>            
+                        </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        <script src="./node_modules/knockout/build/output/knockout-latest.js"></script>    
+        <script src="./node_modules/lodash/core.js"></script>    
+
+        <script src="./tsc-output/components/button/button.js"></script>    
+        <script src="./tsc-output/components/buttonTS/buttonTS.js"></script>   
+        <script src="./tsc-output/components/link/link.js"></script>
+        <script src="./tsc-output/viewmodels/helloViewModel.js"></script>   
+        <script src="./tsc-output/entryPoint.js"></script>        
+    </body>
+</html>

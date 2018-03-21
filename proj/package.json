@@ -1,0 +1,24 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devPack": "NODE_ENV=development webpack",
+    "prdPack": "NODE_ENV=production webpack",
+    "watch": "webpack --progress --colors --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jquery": "^3.3.0",
+    "@types/knockout": "^3.4.47",
+    "@types/lodash": "^4.14.104"
+  },
+  "devDependencies": {
+    "knockout": "^3.4.2",
+    "lodash": "^4.17.5",
+    "ts-loader": "^3.2.0"
+  }
+}
