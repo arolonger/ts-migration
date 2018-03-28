@@ -9,9 +9,9 @@ enum ButtonTSType {
 }
 
 class ButtonTS {
-    _text: string
-    _onClick: Function
-    _css: ButtonTSType
+    private _text: string
+    private _onClick: Function
+    private _css: ButtonTSType
     /**
      * 
      * @param {function} params.onClick -action executed on button click
