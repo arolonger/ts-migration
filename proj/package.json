@@ -17,6 +17,7 @@
     "@types/lodash": "^4.14.104"
   },
   "devDependencies": {
+    "jquery": "^1.11.3",
     "knockout": "^3.4.2",
     "lodash": "^4.17.5",
     "ts-loader": "^3.2.0"

@@ -7,7 +7,6 @@ class HelloViewModel {
     buttonTS: ButtonTS
     buttonTS2: ButtonTS
     buttonTS3: ButtonTS
-    link: Link
     list: CustomSelectList
 
     constructor(teamName: string, devName: string) {
@@ -16,7 +15,7 @@ class HelloViewModel {
 
         this.button = new Button({
             text: "Button",
-            onClick: this.switchValues.bind(this)
+            onClick: this.switchValues.bind(this),
         });
 
         this.button2 = new Button({
@@ -58,7 +57,7 @@ class HelloViewModel {
             },
             observable: ko.observable(),
             htmlID: "Hej"
-        })
+        });
 
         this.list.refresh([
             {
@@ -76,19 +75,6 @@ class HelloViewModel {
             template: `
             <button data-bind="text: _text, click: _onClick, css: _css"></button>
             `
-        });
-
-        ko.components.register("mnlink", {
-            viewModel: { instance: this.link },
-            template: `
-            <div class="MNLink">
-                <a class="MNLink-element" data-bind="
-                    click: _onClick, 
-                    clickBubble: _clickBubble(),
-                    text: _text,
-                    css: _css,
-                    attr: { href: _href }"></a>
-            </div>`
         });
 
         ko.components.register("mncustomselectlist", {

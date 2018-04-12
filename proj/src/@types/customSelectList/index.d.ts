@@ -1,4 +1,6 @@
 declare class CustomSelectList {
+    selected: KnockoutObservable<any>
+
     constructor(params: {
         data: Array<any>,
         displayField: string,
